@@ -1,0 +1,171 @@
+/* ==========================
+   RESET GLOBAL
+========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* ==========================
+   CONFIGURAÇÕES GERAIS
+========================== */
+body {
+    background-color: #0b0f14;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* ==========================
+   HEADER
+========================== */
+.header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.95)
+    );
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+}
+
+.highlight {
+    color: #00ff99;
+}
+
+.header p {
+    margin-top: 10px;
+    color: #b8c1cc;
+}
+
+/* ==========================
+   MENU DE NAVEGAÇÃO
+========================== */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #151f2b;
+    padding: 15px;
+}
+
+.menu a {
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #00ff99;
+}
+
+/* ==========================
+   SEÇÕES
+========================== */
+section {
+    padding: 60px 20px;
+}
+
+/* ==========================
+   CAIXA PADRÃO (cards)
+========================== */
+.box-padrao {
+    max-width: 900px;
+    margin: 25px auto;
+    background-color: #151f2b;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 4px solid #00ff99;
+    box-shadow: 0 0 25px rgba(0,255,153,0.05);
+}
+
+/* ==========================
+   BOTÕES
+========================== */
+.botao {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #5865F2;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #4752c4;
+    transform: scale(1.05);
+}
+
+/* ==========================
+   LINKS DENTRO DO CONTEÚDO
+========================== */
+.box-padrao a {
+    color: #00ff99;
+    font-weight: bold;
+}
+
+.box-padrao a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+.footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #151f2b;
+    color: #b8c1cc;
+    font-size: 0.9rem;
+}
+
+/* ==========================
+   ANIMAÇÕES SUAVES
+========================== */
+.fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s ease;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==========================
+   RESPONSIVIDADE (MOBILE)
+========================== */
+@media (max-width: 768px) {
+
+    .header h1 {
+        font-size: 2.1rem;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu a {
+        padding: 8px 0;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+}
